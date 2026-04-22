@@ -1,0 +1,102 @@
+
+========================================================
+  CUDA DIY Exercise 5: MNIST CNN (cuDNN + cuBLAS)
+========================================================
+  GPU: NVIDIA GeForce RTX 4050 Laptop GPU  Compute: 8.9  VRAM: 6053 MB
+
+[✓] Loaded 60000 MNIST samples from data/train-images-idx3-ubyte
+[✓] Loaded 10000 MNIST samples from data/t10k-images-idx3-ubyte
+
+[Training] Starting for 10 epochs...
+
+  Epoch 1  Batch [0/234]  AvgLoss=2.3026
+  Epoch 1  Batch [50/234]  AvgLoss=2.3027
+  Epoch 1  Batch [100/234]  AvgLoss=2.3018
+  Epoch 1  Batch [150/234]  AvgLoss=2.3025
+  Epoch 1  Batch [200/234]  AvgLoss=2.3031
+  --- Epoch 1 Done  AvgLoss=2.3029 ---
+  Epoch 1 complete in 0.0 s
+
+  Epoch 2  Batch [0/234]  AvgLoss=2.3026
+  Epoch 2  Batch [50/234]  AvgLoss=2.3027
+  Epoch 2  Batch [100/234]  AvgLoss=2.3018
+  Epoch 2  Batch [150/234]  AvgLoss=2.3025
+  Epoch 2  Batch [200/234]  AvgLoss=2.3031
+  --- Epoch 2 Done  AvgLoss=2.3029 ---
+  Epoch 2 complete in 0.0 s
+
+  Epoch 3  Batch [0/234]  AvgLoss=2.3026
+  Epoch 3  Batch [50/234]  AvgLoss=2.3027
+  Epoch 3  Batch [100/234]  AvgLoss=2.3018
+  Epoch 3  Batch [150/234]  AvgLoss=2.3025
+  Epoch 3  Batch [200/234]  AvgLoss=2.3031
+  --- Epoch 3 Done  AvgLoss=2.3029 ---
+  Epoch 3 complete in 0.0 s
+
+  Epoch 4  Batch [0/234]  AvgLoss=2.3026
+  Epoch 4  Batch [50/234]  AvgLoss=2.3027
+  Epoch 4  Batch [100/234]  AvgLoss=2.3018
+  Epoch 4  Batch [150/234]  AvgLoss=2.3025
+  Epoch 4  Batch [200/234]  AvgLoss=2.3031
+  --- Epoch 4 Done  AvgLoss=2.3029 ---
+  Epoch 4 complete in 0.0 s
+
+  Epoch 5  Batch [0/234]  AvgLoss=2.3026
+  Epoch 5  Batch [50/234]  AvgLoss=2.3027
+  Epoch 5  Batch [100/234]  AvgLoss=2.3018
+  Epoch 5  Batch [150/234]  AvgLoss=2.3025
+  Epoch 5  Batch [200/234]  AvgLoss=2.3031
+  --- Epoch 5 Done  AvgLoss=2.3029 ---
+  Epoch 5 complete in 0.0 s
+
+  Epoch 6  Batch [0/234]  AvgLoss=2.3026
+  Epoch 6  Batch [50/234]  AvgLoss=2.3027
+  Epoch 6  Batch [100/234]  AvgLoss=2.3018
+  Epoch 6  Batch [150/234]  AvgLoss=2.3025
+  Epoch 6  Batch [200/234]  AvgLoss=2.3031
+  --- Epoch 6 Done  AvgLoss=2.3029 ---
+  Epoch 6 complete in 0.0 s
+
+  Epoch 7  Batch [0/234]  AvgLoss=2.3026
+  Epoch 7  Batch [50/234]  AvgLoss=2.3027
+  Epoch 7  Batch [100/234]  AvgLoss=2.3018
+  Epoch 7  Batch [150/234]  AvgLoss=2.3025
+  Epoch 7  Batch [200/234]  AvgLoss=2.3031
+  --- Epoch 7 Done  AvgLoss=2.3029 ---
+  Epoch 7 complete in 0.0 s
+
+  Epoch 8  Batch [0/234]  AvgLoss=2.3026
+  Epoch 8  Batch [50/234]  AvgLoss=2.3027
+  Epoch 8  Batch [100/234]  AvgLoss=2.3018
+  Epoch 8  Batch [150/234]  AvgLoss=2.3025
+  Epoch 8  Batch [200/234]  AvgLoss=2.3031
+  --- Epoch 8 Done  AvgLoss=2.3029 ---
+  Epoch 8 complete in 0.0 s
+
+  Epoch 9  Batch [0/234]  AvgLoss=2.3026
+  Epoch 9  Batch [50/234]  AvgLoss=2.3027
+  Epoch 9  Batch [100/234]  AvgLoss=2.3018
+  Epoch 9  Batch [150/234]  AvgLoss=2.3025
+  Epoch 9  Batch [200/234]  AvgLoss=2.3031
+  --- Epoch 9 Done  AvgLoss=2.3029 ---
+  Epoch 9 complete in 0.0 s
+
+  Epoch 10  Batch [0/234]  AvgLoss=2.3026
+  Epoch 10  Batch [50/234]  AvgLoss=2.3027
+  Epoch 10  Batch [100/234]  AvgLoss=2.3018
+  Epoch 10  Batch [150/234]  AvgLoss=2.3025
+  Epoch 10  Batch [200/234]  AvgLoss=2.3031
+  --- Epoch 10 Done  AvgLoss=2.3029 ---
+  Epoch 10 complete in 0.0 s
+
+[Stretch] CUDA Streams async pipeline:
+  [H-AsyncPipeline] TODO: implement double-buffered pipeline
+
+[Stretch] FP16 Tensor Core GEMM:
+  [J-FP16-TensorCore] STRETCH: implement cublasGemmEx with CUDA_R_16F
+
+========================================================
+  Exercise 5 complete!
+  Implement all TODOs to see MNIST training in action.
+========================================================
+

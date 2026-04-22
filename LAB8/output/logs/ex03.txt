@@ -1,0 +1,26 @@
+
+========================================================
+  CUDA DIY Exercise 3: ML Primitives
+========================================================
+  GPU: NVIDIA GeForce RTX 4050 Laptop GPU
+
+[Section A] Reference:
+  [A2-Softmax] Row sums = 1.0: [PASS]
+
+[Section B] DIY Activations:
+  [B1-Sigmoid] [PASS]
+  [B2-Tanh] [PASS]
+  [B3-LeakyReLU] alpha=0.01  [PASS]
+  [B4-ReLUBackward] [PASS]
+
+[Section C] DIY Loss Functions:
+  [C1-BCE-Loss] [PASS]
+  [C2-CrossEntropy] N=512 C=10  [PASS]
+
+[Section D] Stretch — Adam Optimizer:
+  [D1-Adam] 5 steps  [PASS]
+
+========================================================
+  All [PASS] = ready for Exercise 4!
+========================================================
+

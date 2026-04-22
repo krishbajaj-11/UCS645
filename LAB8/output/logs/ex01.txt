@@ -1,0 +1,41 @@
+
+========================================================
+  CUDA DIY Exercise 1: Basics & Memory
+========================================================
+  GPU: NVIDIA GeForce RTX 4050 Laptop GPU  (SM 8.9)  VRAM: 6053 MB
+
+[Section A] Reference:
+  [A1-VectorAdd] N=1048576  CPU=1.6 ms  GPU=0.04 ms  Speedup=37.4x  [PASS]
+
+[Section B] DIY Exercises:
+  [B1-VectorScale] k=3.14  [PASS]
+  [B2-SquaredDiff] [PASS]
+
+  [B3-LaunchConfig] threads_per_block=256
+           N    blocks    total_threads   covers_all?
+  ---------------------------------------------------
+           1         1              256          [OK]
+         100         1              256          [OK]
+         256         1              256          [OK]
+         257         2              512          [OK]
+        1024         4             1024          [OK]
+       10000        40            10240          [OK]
+     1048576      4096          1048576          [OK]
+
+  [B4-MemoryBandwidth]
+   Size (MB)    H2D (GB/s)    D2H (GB/s)
+  ----------------------------------------
+           1           6.3          11.5
+           8           6.2           7.0
+          64           7.9           6.9
+         256           7.7           6.9
+         512           7.7           6.3
+
+[Section C] Stretch Goals:
+  [C1-ReLU-Stretch] [PASS]
+  [C2-WarpDivergence] Divergent=2.00ms  BranchFree=2.01ms  Overhead=1.0x
+
+========================================================
+  Exercise 1 complete! All [PASS] = ready for Ex02.
+========================================================
+

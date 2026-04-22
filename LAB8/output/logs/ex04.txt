@@ -1,0 +1,31 @@
+
+========================================================
+  CUDA DIY Exercise 4: Tiled GEMM & CNN Layers
+========================================================
+  GPU: NVIDIA GeForce RTX 4050 Laptop GPU  Peak TFLOPS (FP32): ~145
+
+[Section A] Reference: Naive MatMul:
+  Naive 256x256@256x256  0.37 ms  89.5 GFLOPS
+
+[Section B] DIY: Tiled GEMM:
+  [B1-TiledMatMul] 512x512@512x512  0.27 ms  988.3 GFLOPS  [PASS]
+
+  [B2-GemmBenchmark]
+    Size     Naive(ms)     Tiled(ms)    cuBLAS(ms)  cuBLAS GFLOPS
+  --------------------------------------------------------------
+     128          0.01          0.01          1.43         2.9
+     256          0.05          0.04          0.04       759.8
+     512          0.35          0.27          0.08      3303.9
+    1024          2.70          2.07          0.29      7403.0
+
+[Section C] DIY: CNN Layers:
+  [C1-MaxPool2x2] (4,8,16,16)->(4,8,8,8)  [PASS]
+  [C2-BatchNorm] (4,8,16,16)  [PASS]
+
+[Section D] Stretch — Direct Conv2D:
+  [D1-Conv2D] H_out=8 W_out=8  output_sum=899.06  [PASS]
+
+========================================================
+  All [PASS] = ready for Exercise 5!
+========================================================
+
